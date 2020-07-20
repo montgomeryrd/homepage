@@ -1,5 +1,6 @@
 import React from 'react';
 import Tasks from './components/tasks/Tasks';
+import MyLinks from './components/mylinks/MyLinks';
 import './App.css';
 
 class App extends React.Component {
@@ -11,15 +12,9 @@ class App extends React.Component {
       get tasks() {
         return this._tasks;
       },
-      set tasks(value){
-        this._tasks = value;
-      },
       _completedTasks : [],
       get completedTasks() {
         return this._completedTasks;
-      },
-      set completedTasks(value){
-        this._completedTasks = value;
       },
     }
     this.handleChange = this.handleChange.bind(this);
@@ -77,6 +72,7 @@ class App extends React.Component {
           handleChange = {this.handleChange}
           handleSubmit = {this.handleSubmit}
         />
+        <MyLinks />
       </div>
     );
   }

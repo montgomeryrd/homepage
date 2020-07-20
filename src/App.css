@@ -1,52 +1,94 @@
+.App {
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-family: 'Gudea', sans-serif;
+}
+/* Tasks Styling */
 .my-tasks-container {
-    border: .5px solid #267f62;
+    border: .5px solid black;
     border-radius: 1mm;
     margin-top: 5px;
-    margin-left: 5px;
-    width: 200px;
-    padding-bottom: 5px;
+    min-width: 200px;
+    padding-bottom: 10px;
+    background-color: rgb(4, 11, 29);
 }
 .my-tasks-container h1 {
-    font-size: 1.2rem;
+    font-size: .5rem;
     padding: 5px;
     position: absolute;
-    cursor: pointer;
 }
 .remove-btn {
     display: block;
-    margin-left: 125px;
-    font-family: 'Suranna', serif;
-    font-size: .8rem;
-    border: none;
+    margin-left: 150px;
+    padding: 5px;
+    font-size: .5rem;
     background: none;
-    margin-bottom: -5px;
+    border: none;
+    color: white;
+    font-family: 'Gudea', sans-serif;
 }
 .remove-btn:hover {
-    color: #72E5BE;
-    transition: 700ms;
+    color: #fa9ce4;
+    transition: 500ms;
 }
 .tasks-form input {
-    border: solid .5px black;
+    border: none;
+    background: none;
     border-radius: 1mm;
-    width: 150px;
+    border-bottom: solid .2px white;
+    border-top: solid .2px white;
+    border-right: solid .5px white;
+    border-left: solid .5px white;
+    padding: 4px;
+    width: 185px;
     margin-left: 5px;
     margin-right: 5px;
-    font-size: .6rem;;
-}
-.tasks-form-btn {
     font-size: .6rem;
-    background: none;
-    border: none;
-}
-.tasks-form-btn:hover {
-    color: #72E5BE;
+    color: white;
 }
 .tasks-container {
-    font-family: 'Suranna', serif;
     margin-top: 5px;
     margin-left: 5px;
 }
+.item {
+    font-size: .7rem;
+}
 .line {
-    border-bottom: .5px dotted #267f62;
-    width: 185px;
+    border-bottom: .2px groove white;
+    width: 195px;
+    cursor: pointer;
+    border-radius: 1mm;
+}
+.empty-list {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: .7rem;
+}
+/* Links Styling */
+.my-links {
+    border: solid .5px black;
+    background-color: rgb(4, 11, 29);
+    border-radius: 1mm;
+    margin-left: 5px;
+    margin-top: 5px;
+    max-height: 130px;
+    min-width: 145px;
+    padding: 5px;
+}
+.my-links ul {
+    display: flex;
+    flex-direction: column;
+}
+.my-links ul li {
+    margin-bottom: 10px;
+    font-size: .6rem;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+}
+.links a:hover {
+    transition: 700ms;
+    color: #86ff61;
 }
